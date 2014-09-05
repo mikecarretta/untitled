@@ -14,7 +14,34 @@
     margin: 0 auto;
   }
 }
-
+.portfolio .block {
+  width: 100%;
+  padding: 14px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio .block {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: @screen-sm-min) {
+  .portfolio .block {
+    width: 50%;
+    float: left;
+  }
+}
+@media screen and (min-width: @screen-md-min) {
+  .portfolio .block {
+    width: 33.33%;
+    float: left;
+  }
+}
+@media screen and (min-width: @screen-lg-min) {
+  .portfolio .block {
+    width: 33.33%;
+    float: left;
+  }
+}
 .filters {
   padding-bottom: 20px;
 }
