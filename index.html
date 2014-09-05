@@ -1,0 +1,62 @@
+---
+layout:     default
+title:      Home
+hero_title: Untitled Portfolio Jekyll Theme
+hero_desc:  This is strictly a portfolio Jekyll theme and is easy to customize. Made with Bootstrap 3; include only the styles and scripts you need using Bower and Grunt.
+slug:       home
+---
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <header class="col-md-12">
+        <h1>{{ page.hero_title }}</h1>
+        <p>{{ page.hero_desc }}</p>
+      </header>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container portfolio">
+    <div class="row items">
+
+      <header class="col-md-12">
+        <h1 class="page-header">Current Work</h1>
+      </header>
+
+      {% for post in site.posts limit:3%}
+      <div class="col-md-4 block">
+          <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">
+            <figure>
+              <img src="/portfolio_imgs/{{ post.thumbnail }}" title="{{ post.title }}" class="img-responsive" />
+              <figcaption>{{ post.title }}</figcaption>
+            </figure>
+          </a>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
+<!--
+<section>
+  <div class="container posts">
+    <div class="row items">
+      <header class="col-md-12">
+        <h1 class="page-header">Posts</h1>
+      </header>
+
+      <article class="col-md-12 post-list">
+        {% for post in site.posts %}
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p>{{ post.exerpt }}</p>
+        {% endfor %}
+      </article>
+
+    </div>
+  </div>
+</section>
+-->
