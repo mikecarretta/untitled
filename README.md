@@ -10,3 +10,5 @@ Use [Bower](http://bower.io/): "A package manager for the web", to install depen
 Use [Grunt](http://gruntjs.com/) to run tasks, compile, copy, uglify, run a localhost server, etc.
 
 You can find out more info about customizing this Jekyll theme, as well as basic Jekyll usage documentation at [Jekyll](http://jekyllrb.com/). Jekyll uses the Liquid templating language to process templates and great reference is the [Liquid for Designers](https://github.com/Shopify/liquid/wiki/Liquid-for-Designers) Wiki by Shopify.
+
+![Untitled Portfolio Jekyll Template Screenshot](https://raw.githubusercontent.com/mikecarretta/untitled/gh-pages/Screenshot.png)
